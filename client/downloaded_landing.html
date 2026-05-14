@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EcoTrack: The Living Infrastructure</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "inverse-on-surface": "#ecf1ff",
+                "secondary-fixed": "#d8e3fb",
+                "inverse-surface": "#263143",
+                "tertiary-fixed": "#ffddb8",
+                "surface-container": "#e7eeff",
+                "surface-variant": "#d8e3fb",
+                "outline-variant": "#bccbb9",
+                "on-primary-fixed-variant": "#005321",
+                "on-primary": "#ffffff",
+                "primary-container": "#22c55e",
+                "on-error-container": "#93000a",
+                "background": "#f9f9ff",
+                "on-surface-variant": "#3d4a3d",
+                "primary-fixed": "#6bff8f",
+                "error-container": "#ffdad6",
+                "error": "#ba1a1a",
+                "surface": "#f9f9ff",
+                "surface-bright": "#f9f9ff",
+                "tertiary-container": "#ef9900",
+                "on-primary-fixed": "#002109",
+                "on-secondary-fixed": "#111c2d",
+                "surface-container-low": "#f0f3ff",
+                "on-tertiary": "#ffffff",
+                "secondary": "#545f73",
+                "on-surface": "#111c2d",
+                "on-tertiary-fixed": "#2a1700",
+                "surface-container-highest": "#d8e3fb",
+                "on-secondary-container": "#586377",
+                "secondary-fixed-dim": "#bcc7de",
+                "inverse-primary": "#4ae176",
+                "on-error": "#ffffff",
+                "surface-dim": "#cfdaf2",
+                "on-secondary-fixed-variant": "#3c475a",
+                "on-tertiary-fixed-variant": "#653e00",
+                "on-secondary": "#ffffff",
+                "tertiary-fixed-dim": "#ffb95f",
+                "primary": "#006e2f",
+                "on-tertiary-container": "#5c3800",
+                "tertiary": "#855300",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#4ae176",
+                "secondary-container": "#d5e0f8",
+                "surface-tint": "#006e2f",
+                "on-background": "#111c2d",
+                "outline": "#6d7b6c",
+                "surface-container-high": "#dee8ff",
+                "on-primary-container": "#004b1e"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "1.5rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-slate-950/80 backdrop-blur-2xl docked full-width top-0 z-50 shadow-[0_8px_32px_rgba(17,28,45,0.06)]">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="font-['Manrope'] font-extrabold text-2xl bg-gradient-to-r from-green-700 to-green-500 bg-clip-text text-transparent">EcoFlow Smart</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-green-700 dark:text-green-400 font-semibold font-['Manrope'] font-bold text-lg tracking-tight hover:opacity-80 transition-opacity duration-300" href="#">Mission</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-['Manrope'] font-bold text-lg tracking-tight hover:opacity-80 transition-opacity duration-300" href="#">Impact</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-['Manrope'] font-bold text-lg tracking-tight hover:opacity-80 transition-opacity duration-300" href="#">Partners</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block px-6 py-2 rounded-full bg-primary text-on-primary font-bold hover:opacity-80 transition-opacity duration-300 Active: scale-95 transition-transform">Get Started</button>
+<button class="material-symbols-outlined text-slate-600">menu</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-br from-surface via-surface-container-low to-primary-fixed/10"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl max-h-4xl opacity-20 blur-3xl rounded-full bg-primary-container"></div>
+</div>
+<div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div>
+<span class="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-xs font-bold tracking-widest uppercase font-label">The Future of Waste</span>
+<h1 class="text-5xl lg:text-7xl font-extrabold font-headline leading-tight tracking-tight text-on-surface mb-6">
+                        The <span class="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent">Living</span> Infrastructure
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                        Transforming urban waste into a breathing ecosystem of data and efficiency. EcoTrack creates high-fidelity visibility into every kilogram of resource flow.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 rounded-xl bg-gradient-to-r from-primary to-primary-container text-white font-bold text-lg shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">Get Started</button>
+<button class="px-8 py-4 rounded-xl bg-surface-container-highest/50 backdrop-blur-md text-on-surface font-bold text-lg hover:bg-surface-container-highest transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">play_circle</span> Watch Mission
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-r from-primary-container/20 to-tertiary-container/20 rounded-[2rem] blur-2xl group-hover:blur-3xl transition-all opacity-70"></div>
+<img alt="Living Infrastructure Visual" class="relative rounded-[2rem] w-full h-[500px] object-cover shadow-2xl border border-white/20" data-alt="Futuristic 3D visualization of a sustainable smart city grid with green glowing nodes and data streams interconnected under soft cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzAUdTdAAO6ayVXJnXV_GB6iIeC3rTCAC8KvIxn4iIz1nBffAP1Vm1EUNzgWwUdCSUvFUKQEu7syd6Xjw1-4JNvRs8Sk51fY-PAHp_jamAp_RdSC3xgt-CD-ktuKVP8euH3D_ns9N8tQPs7xf8NMgT1J7kx_kP-Dnzn42Y0AuJBBESHnIj4IKTHvwlorpYPkjFIFARyZacwqSFNPWJK4W-XyJVQ-yBtkeW5zebxATFS6XJW7X-u-yPg1SIIT_1SNhfjuv9UHsgGVcD"/>
+</div>
+</div>
+</section>
+<!-- Section 2: How It Works -->
+<section class="py-24 bg-surface">
+<div class="container mx-auto px-6">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-extrabold font-headline text-on-surface mb-4">The Living Network</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Our proprietary technology stack creates a seamless loop of intelligence from the physical bin to global ESG reporting.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Step 1 -->
+<div class="group p-8 rounded-xl bg-surface-container-low hover:bg-surface-container-highest transition-colors relative overflow-hidden">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-fixed-variant text-3xl">sensors</span>
+</div>
+<h3 class="text-2xl font-bold font-headline mb-4">Smart Sensors</h3>
+<p class="text-on-surface-variant">IoT-enabled ultrasonic sensors track fill levels, methane concentration, and material density in real-time.</p>
+<div class="absolute bottom-[-20%] right-[-10%] opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-9xl">sensors</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="group p-8 rounded-xl bg-surface-container transition-colors relative overflow-hidden">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-fixed-variant text-3xl">psychology</span>
+</div>
+<h3 class="text-2xl font-bold font-headline mb-4">Intelligence</h3>
+<p class="text-on-surface-variant">AI-driven routing engines optimize collection logistics, reducing CO2 emissions by up to 45%.</p>
+<div class="absolute bottom-[-20%] right-[-10%] opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-9xl">psychology</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="group p-8 rounded-xl bg-surface-container-high transition-colors relative overflow-hidden">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-fixed-variant text-3xl">eco</span>
+</div>
+<h3 class="text-2xl font-bold font-headline mb-4">Global Impact</h3>
+<p class="text-on-surface-variant">Verified ESG data streams directly to stakeholders, proving circular economy performance.</p>
+<div class="absolute bottom-[-20%] right-[-10%] opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-9xl">eco</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Impact Stats -->
+<section class="py-24 bg-inverse-surface text-inverse-on-surface overflow-hidden relative">
+<div class="absolute inset-0 opacity-10">
+<div class="grid grid-cols-12 h-full">
+<div class="border-r border-outline-variant/30 h-full"></div>
+<div class="border-r border-outline-variant/30 h-full"></div>
+<div class="border-r border-outline-variant/30 h-full"></div>
+<div class="border-r border-outline-variant/30 h-full"></div>
+<div class="border-r border-outline-variant/30 h-full"></div>
+</div>
+</div>
+<div class="container mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
+<div class="text-center lg:text-left">
+<span class="text-4xl lg:text-8xl font-black font-headline text-primary-fixed block mb-2 tracking-tighter">94%</span>
+<span class="text-lg font-label uppercase tracking-widest text-primary-container font-bold">Diversion Rate</span>
+<p class="mt-4 text-surface-variant/80">Average increase in waste diversion for cities using EcoTrack infrastructure.</p>
+</div>
+<div class="text-center lg:text-left">
+<span class="text-4xl lg:text-8xl font-black font-headline text-white block mb-2 tracking-tighter">1.2M</span>
+<span class="text-lg font-label uppercase tracking-widest text-secondary-fixed font-bold">CO2 Tons Offset</span>
+<p class="mt-4 text-surface-variant/80">Equivalent to planting over 50 million mature trees across our partner sites.</p>
+</div>
+<div class="text-center lg:text-left">
+<span class="text-4xl lg:text-8xl font-black font-headline text-tertiary-fixed block mb-2 tracking-tighter">420+</span>
+<span class="text-lg font-label uppercase tracking-widest text-tertiary-container font-bold">Partner Cities</span>
+<span class="block mt-4 text-surface-variant/80">Active network growth in North America, Europe, and Asia-Pacific.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Ecosystem Grid -->
+<section class="py-24 bg-background">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-extrabold font-headline text-on-surface mb-4">Built for Everyone</h2>
+<p class="text-on-surface-variant">The Living Infrastructure scales across every sector, from small-town neighborhoods to global hospitality groups.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group" href="#">
+                        Explore all sectors <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Businesses -->
+<div class="md:col-span-8 bg-surface-container rounded-xl overflow-hidden group hover:scale-[1.01] transition-all">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-10 flex flex-col justify-center">
+<span class="text-xs font-bold tracking-widest uppercase text-primary mb-4 font-label">Enterprise</span>
+<h3 class="text-3xl font-bold font-headline mb-4">Sustainability Leaders</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Turn sustainability into a competitive advantage with real-time audit trails and certified waste reports for ESG compliance.</p>
+<button class="w-fit px-6 py-2 bg-primary text-white rounded-lg font-bold">Learn More</button>
+</div>
+<div class="relative h-64 md:h-auto min-h-[300px]">
+<img alt="Enterprise" class="absolute inset-0 w-full h-full object-cover" data-alt="Modern sustainable glass office building reflecting clear sky with lush vertical gardens integrated into the architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApMSxjA2F8y_IETe1d7ZdPUGDk2pvYqmbU4G2uPPN8_xsjxDcB7Jcsseefws5G8oxiZFD9cBHY0xBgADRSnz6ZpIjWAAoVpBVvRvnVVJ9XWYDcC2dMbTlhNOpSULNouUp7McNqs0H4L7zUIlw-o-bF4Ldj7-gZkAHmXH96QXl9zECWMK_LjcG871vO6DtaQfgGBSbkkPshEIU60GWTbSgbnZgTi8WVJtOvrNFT_jASkY_nFduqznYnt3Hcs4Id03tjgiZyTedyDO7G"/>
+</div>
+</div>
+</div>
+<!-- Services -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-xl p-10 flex flex-col justify-between hover:scale-[1.01] transition-all">
+<div>
+<span class="material-symbols-outlined text-primary text-5xl mb-6">local_shipping</span>
+<h3 class="text-2xl font-bold font-headline mb-4">Logistics Operators</h3>
+<p class="text-on-surface-variant">Dynamic routing and automated scheduling that saves fuel and labor while maximizing uptime.</p>
+</div>
+<div class="mt-8 border-t border-white/20 pt-8">
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-sm font-semibold"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> 30% Efficiency Gain</li>
+<li class="flex items-center gap-2 text-sm font-semibold"><span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span> Dynamic Fleet Management</li>
+</ul>
+</div>
+</div>
+<!-- Citizens -->
+<div class="md:col-span-12 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/3 h-64 md:h-auto">
+<img alt="Citizen Engagement" class="w-full h-full object-cover" data-alt="Close-up of a person putting a plastic bottle into a sleek modern recycling bin in a bright clean futuristic park setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5O1KdIJizzaBdQ2Q7EAKyHVGtSo4rMjLAXH_ucRjM2N8-lSrwboZi7bIK1p-APS20trSlfrpEhdlmafcb0Vu_qBxV5RDeHmuFYFtcuLE5widtDiq0ff9lavbtLLNEr4MskThw5DK4YLN2iN5_g-T8pDmYeFV-9iUFrng1xPjItOvNaM1CB9ACNRThFglQasH0o6ANwTyaNPIaaPzzs3zNJ6joIs0sirZ55UVO8xbBQSlppCfbQ1zCA-NdsoW7sD9pLdb92OLeReMA"/>
+</div>
+<div class="md:w-2/3 p-10 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="w-8 h-[2px] bg-primary"></span>
+<span class="text-xs font-bold tracking-widest uppercase text-on-surface-variant font-label">Community</span>
+</div>
+<h3 class="text-3xl font-bold font-headline mb-4">Citizen Rewards</h3>
+<p class="text-on-surface-variant text-lg max-w-2xl">Gamifying waste management. Residents earn "Eco-Tokens" for verified recycling habits, redeemable at local green businesses.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Impact Stories -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-4xl font-extrabold font-headline text-on-surface mb-2">Impact Stories</h2>
+<p class="text-on-surface-variant">Real people, real planet, real progress.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Story 1 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row">
+<div class="sm:w-1/3 h-48 sm:h-auto">
+<img alt="Sarah Chen" class="w-full h-full object-cover" data-alt="Professional portrait of a middle-aged woman smiling in a bright office environment, warm and professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeTdYbb3qNwiHL56vB4oZpVM4wnw2OTTkgxfSz_DGrY3mDCSfVEbk1Ek7PS7KK6IVSg9f3J9tgaTQNTWi6ucgJ06CagUx1UpJ8W17nbRNL97ELEGpUFD7Xr1zj42lqYa-BepCfcpSZckR5J_ShmeFuEGaa6RYzSHEMr4a3fI7P13jPf8XHWH2m76R71qm1zNoI8BS5gqNgRg-O266mnny4cquW-2t1twXWdxYGlWkS4GUtgIfdRhUch7lszMpzFBbMGoV5fxj2Ucvd"/>
+</div>
+<div class="sm:w-2/3 p-8 flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface mb-6 leading-relaxed">"EcoTrack transformed how our hotel handles waste. We've cut disposal costs by 22% and our guests love seeing the real-time diversion metrics in the lobby."</p>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Sarah Chen</h4>
+<span class="text-sm text-on-surface-variant">Director of Operations, Azure Hospitality</span>
+</div>
+</div>
+</div>
+<!-- Story 2 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row">
+<div class="sm:w-1/3 h-48 sm:h-auto">
+<img alt="Marcus Thorne" class="w-full h-full object-cover" data-alt="Portrait of a young male architect looking at blueprints in a bright modern studio with large windows and plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiyPjhp7ZmIQm9wFWBSPAsXSrGTvfPzQIB6dLDfYuSqCE5qRLgmJs9q1mZuPST_uc5SxdiU832o_FrzTotkpunPgLKvH0cr_T-z3ZXRvFObVUyowNF6Y0PEmLSzZ97EzIb_Rohvzh9aeDFsYuy-LOZTryMsK8kJrT4ZtLV1h-qxm5GjUp8e5gU2ExFSIf2jDQeaRWW-QK_WrXKbNoCk0M6NLeUhmgXt2CB_aX2jAaGCXG0YyOeEGz5YhOLyfO1yqJzT7foc0NuGLrL"/>
+</div>
+<div class="sm:w-2/3 p-8 flex flex-col justify-between">
+<div>
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface mb-6 leading-relaxed">"As a city planner, the data EcoTrack provides is invaluable. We can finally see where the infrastructure is leaking and fix it with precision."</p>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Marcus Thorne</h4>
+<span class="text-sm text-on-surface-variant">Chief Urbanist, Portland Smart City</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Global Footprint Map -->
+<section class="py-24 bg-white relative">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold font-headline mb-4">Global Footprint</h2>
+<p class="text-on-surface-variant">Scaling the movement across every continent.</p>
+</div>
+<div class="relative bg-surface-container rounded-3xl p-4 overflow-hidden border border-surface-variant">
+<img alt="EcoTrack Map" class="w-full h-[500px] object-cover rounded-2xl grayscale" data-alt="Stylized minimalist world map in soft grayscale with vibrant glowing green pulses indicating active technology nodes across the globe" data-location="Global" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYE4Z6cFIZS8xl_AjQOn6ZRFVY1mMMhE2HDBw7vCC-go4eNfAARSicmiLHUfe2hl-qnnEdl0mb-0V850R2p6dxqOSCu3Yfk1UUKxpqJwRmrj9RJfz8yKcW11J6d0tw-34P4JEyIBkBfFEy_gCZA4UG3lQ6J1NHeoYY-a_6JjSd-V67Cu5uTARtOugvlzzY4bVP9R4wFJN2soCuzaCAKTMB9AjGx80-bJXVjFL-Jtr6qmVPchQTFlQtf13bNqGUW-lu6PRSJgOiLtMI"/>
+<!-- Pulsing Nodes Overlays (Simulation) -->
+<div class="absolute top-[30%] left-[25%] w-4 h-4 bg-primary rounded-full animate-pulse"></div>
+<div class="absolute top-[40%] left-[45%] w-4 h-4 bg-primary rounded-full animate-pulse"></div>
+<div class="absolute top-[60%] left-[75%] w-4 h-4 bg-primary rounded-full animate-pulse"></div>
+<div class="absolute bottom-10 left-10 p-6 bg-white/90 backdrop-blur-xl rounded-xl shadow-xl max-w-xs border border-white">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-3 h-3 bg-primary rounded-full animate-ping"></div>
+<span class="text-xs font-bold uppercase tracking-widest font-label">Active Node</span>
+</div>
+<h4 class="text-lg font-bold mb-1">Copenhagen Hub</h4>
+<p class="text-sm text-on-surface-variant">98.2% Material recovery rate achieved last month.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Join CTA -->
+<section class="py-24 bg-surface">
+<div class="container mx-auto px-6">
+<div class="bg-inverse-surface rounded-[2.5rem] p-10 md:p-20 relative overflow-hidden">
+<!-- Design Accents -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary blur-[120px] opacity-30"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-container blur-[120px] opacity-20"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl md:text-6xl font-extrabold font-headline text-white mb-6 leading-tight">Ready to activate your infrastructure?</h2>
+<p class="text-surface-variant text-xl mb-10">Join the world's most advanced waste intelligence network and start measuring your true impact today.</p>
+<div class="flex items-center gap-4 text-white/60">
+<span class="material-symbols-outlined text-primary-fixed">verified</span>
+<span>Trusted by 50+ Fortune 500 Companies</span>
+</div>
+</div>
+<div class="bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/10 shadow-2xl">
+<form class="space-y-4">
+<div>
+<label class="block text-white/70 text-xs font-bold uppercase tracking-widest mb-2 font-label">Full Name</label>
+<input class="w-full bg-white/10 border-0 border-b-2 border-white/20 focus:border-primary-fixed focus:ring-0 text-white placeholder-white/30 px-0 py-3 transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-white/70 text-xs font-bold uppercase tracking-widest mb-2 font-label">Work Email</label>
+<input class="w-full bg-white/10 border-0 border-b-2 border-white/20 focus:border-primary-fixed focus:ring-0 text-white placeholder-white/30 px-0 py-3 transition-all" placeholder="john@company.com" type="email"/>
+</div>
+<div>
+<label class="block text-white/70 text-xs font-bold uppercase tracking-widest mb-2 font-label">Organization Type</label>
+<select class="w-full bg-white/10 border-0 border-b-2 border-white/20 focus:border-primary-fixed focus:ring-0 text-white px-0 py-3 appearance-none transition-all">
+<option class="bg-inverse-surface">Municipality / City</option>
+<option class="bg-inverse-surface">Enterprise / Corporate</option>
+<option class="bg-inverse-surface">Service Operator</option>
+</select>
+</div>
+<button class="w-full py-4 rounded-xl bg-primary-fixed text-on-primary-fixed font-black text-lg hover:scale-[1.02] active:scale-95 transition-all mt-6">Secure Your Access</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 px-6 bg-gradient-to-t from-slate-100 to-transparent dark:from-slate-900 shadow-none">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto items-center">
+<div>
+<span class="font-['Manrope'] font-bold text-slate-900 dark:text-white block mb-4 text-xl">EcoFlow Living Infrastructure</span>
+<p class="text-slate-500 font-['Inter'] text-sm leading-relaxed mb-6 max-w-md">The global standard for decentralized resource intelligence and circular waste logistics. Building the foundations of a waste-free future.</p>
+<div class="flex gap-4">
+<a class="text-slate-500 hover:text-slate-800 transition-all duration-300 underline decoration-green-500 decoration-2 underline-offset-4" href="#">Sustainability Report</a>
+<a class="text-slate-500 hover:text-slate-800 transition-all duration-300 underline decoration-green-500 decoration-2 underline-offset-4" href="#">Privacy</a>
+<a class="text-slate-500 hover:text-slate-800 transition-all duration-300 underline decoration-green-500 decoration-2 underline-offset-4" href="#">API</a>
+</div>
+</div>
+<div class="md:text-right">
+<span class="text-slate-500 font-['Inter'] text-sm leading-relaxed">© 2024 EcoFlow Living Infrastructure. All rights reserved.</span>
+<div class="flex md:justify-end gap-6 mt-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">language</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">hub</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">monitoring</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 rounded-full px-6 py-3 w-[90%] max-w-md bg-slate-900/80 dark:bg-white/10 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.2)] flex justify-around items-center z-50 tonal-layering">
+<a class="bg-green-500/20 text-green-400 rounded-full py-2 px-4 flex flex-col items-center Active: scale-110 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="eco" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-['Inter'] font-semibold text-[10px] uppercase tracking-widest">Mission</span>
+</a>
+<a class="text-slate-300 flex flex-col items-center opacity-60 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] font-semibold text-[10px] uppercase tracking-widest">Impact</span>
+</a>
+<a class="text-slate-300 flex flex-col items-center opacity-60 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+<span class="font-['Inter'] font-semibold text-[10px] uppercase tracking-widest">Partners</span>
+</a>
+<a class="text-slate-300 flex flex-col items-center opacity-60 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+<span class="font-['Inter'] font-semibold text-[10px] uppercase tracking-widest">Connect</span>
+</a>
+</nav>
+<!-- Impact Toast -->
+<div class="fixed bottom-24 right-6 bg-inverse-surface text-inverse-on-surface px-4 py-2 rounded-full flex items-center gap-3 shadow-2xl z-40 animate-bounce">
+<span class="material-symbols-outlined text-primary-fixed text-lg">bolt</span>
+<span class="text-xs font-bold font-label tracking-tighter">1.2kg CO2 saved this hour</span>
+</div>
+</body></html>
