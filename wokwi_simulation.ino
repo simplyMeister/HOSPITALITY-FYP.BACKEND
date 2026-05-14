@@ -9,7 +9,7 @@ const char* password = "";
 // EcoTrack Backend Server URL
 // Note: In Wokwi, localhost/127.0.0.1 won't point to your laptop server directly without a tunnel.
 // Replace this with your ngrok/localtunnel URL during local development, e.g. "https://<your-ngrok-id>.ngrok.io/api/bins/sensor-update"
-const char* serverName = "http://YOUR_BACKEND_URL/api/bins/sensor-update";
+const char* serverName = "https://hospitality-fyp-backend.vercel.app/api/bins/sensor-update";
 
 // HC-SR04 Pins
 const int trigPin = 5;

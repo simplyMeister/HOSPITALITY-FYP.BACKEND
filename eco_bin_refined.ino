@@ -7,7 +7,7 @@ const char* ssid = "Wokwi-GUEST";
 const char* password = "";
 
 // The stable Tunnelmole URL
-const char* serverName = "https://agotra-ip-165-73-223-224.tunnelmole.net/api/bins/sensor-update";
+const char* serverName = "https://hospitality-fyp-backend.vercel.app/api/bins/sensor-update";
 
 // Simulation Configuration
 String bin_code = "ECO-BIN-10V5"; 

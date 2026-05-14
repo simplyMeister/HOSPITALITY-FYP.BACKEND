@@ -7,7 +7,7 @@ const char* ssid = "Wokwi-GUEST";
 const char* password = "";
 
 // You can use the same tunnel for multiple bins, the server uses bin_code to differentiate
-const char* serverName = "https://2iizgh-ip-165-73-223-224.tunnelmole.net/api/bins/sensor-update";
+const char* serverName = "https://hospitality-fyp-backend.vercel.app/api/bins/sensor-update";
 
 // Simulation Configuration
 String bin_code = "ECO-BIN-77X2"; // SECONDARY BIN
