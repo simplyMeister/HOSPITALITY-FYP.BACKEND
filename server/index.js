@@ -4,7 +4,7 @@ const cors = require('cors');
 const { createClient } = require('@supabase/supabase-js');
 
 // Initialize Supabase Client
-const supabaseUrl = process.env.SUPABASE_URL || 'YOUR_SUPABASE_URL';
+const supabaseUrl = process.env.SUPABASE_URL || 'https://placeholder.supabase.co';
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'YOUR_SUPABASE_SERVICE_KEY'; // Need service role to bypass RLS in backend
 const supabase = createClient(supabaseUrl, supabaseKey);
 
@@ -142,7 +142,12 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'healthy', platform: 'EcoTrack API' });
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`EcoTrack Backend Server running on port ${PORT} (Global)`);
-});
+if (require.main === module) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`EcoTrack Backend Server running on port ${PORT} (Global)`);
+  });
+}
+
+// Export the Express API for Vercel Serverless
+module.exports = app;
